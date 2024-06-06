@@ -1,7 +1,8 @@
-'use client'
+"use client"
 
-import { useState } from 'react'
-import clsx from 'clsx'
+import { useState } from "react"
+import clsx from "clsx"
+import Logo from "./logo/logo"
 
 const NavBar = () => {
   const [isHamburgerOpen, setIsHamburgerOpen] = useState(false)
@@ -19,41 +20,42 @@ const NavBar = () => {
         <div className="hamburger flex h-[1.5rem] w-[1.5rem] flex-col justify-between">
           <div
             className={clsx(
-              'h-1/6 w-full rounded-sm bg-black transition-transform',
+              "h-1/6 w-full rounded-sm bg-black transition-transform",
               {
-                'translate-y-[0.5rem] rotate-45 transform': isHamburgerOpen
+                "translate-y-[0.5rem] rotate-45 transform": isHamburgerOpen
               }
             )}
           ></div>
           <div
             className={clsx(
-              'h-1/6 w-1/2 rounded-sm bg-black transition-opacity',
+              "h-1/6 w-1/2 rounded-sm bg-black transition-opacity",
               {
-                'opacity-0': isHamburgerOpen
+                "opacity-0": isHamburgerOpen
               }
             )}
           ></div>
           <div
             className={clsx(
-              'h-1/6 w-full rounded-sm bg-black transition-transform',
+              "h-1/6 w-full rounded-sm bg-black transition-transform",
               {
-                '-translate-y-[0.5rem] -rotate-45 transform': isHamburgerOpen
+                "-translate-y-[0.5rem] -rotate-45 transform": isHamburgerOpen
               }
             )}
           ></div>
         </div>
         <h3>白頭翁不吃小米</h3>
-        <div>logo will here</div>
+        {/* logo here */}
+        <Logo />
       </div>
       <ul
         className={clsx(
-          'absolute left-0 top-full flex w-full flex-col items-center gap-3 border border-lime-700 bg-white transition-all duration-300',
+          "absolute left-0 top-full flex w-full flex-col items-center gap-3 border border-lime-700 bg-white transition-all duration-300",
           {
-            'max-h-0 opacity-0': !isHamburgerOpen,
-            'max-h-[200px] opacity-100': isHamburgerOpen
+            "max-h-0 opacity-0": !isHamburgerOpen,
+            "max-h-[200px] opacity-100": isHamburgerOpen
           }
         )}
-        style={{ overflow: 'hidden' }}
+        style={{ overflow: "hidden" }}
       >
         <li>
           <a href="/">Home</a>
