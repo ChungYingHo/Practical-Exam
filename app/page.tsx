@@ -19,11 +19,11 @@ export default function Home() {
   return (
     <main className="flex min-h-screen flex-col md:w-3/4">
       {/* section 1 */}
-      <section className="h-[30vh] md:h-2/3 w-full bg-[url(/background.png)] bg-cover bg-no-repeat">
-        <h3 className="text-white">白頭翁</h3>
+      <section className="flex h-[30vh] w-full items-end justify-end bg-[url(/background.png)] bg-[length:110%] bg-right bg-no-repeat md:h-2/3">
+        <h3 className="text-6xl text-white">白頭翁</h3>
       </section>
       {/* section 2 */}
-      <section className="h-1/3 w-full bg-orange-300">
+      <section className="flex h-1/3 w-full flex-col items-center bg-orange-300 md:flex-row">
         {introList.map((intro, index) => (
           <IntroArea
             key={index}
