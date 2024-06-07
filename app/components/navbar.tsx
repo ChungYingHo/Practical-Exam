@@ -14,11 +14,11 @@ const linkList = [
     href: "/"
   },
   {
-    name: "白頭翁的分布",
+    name: "白頭翁的美照",
     href: "/"
   },
   {
-    name: "白頭翁的保育",
+    name: "白頭翁的危機",
     href: "/"
   }
 ]
@@ -31,10 +31,10 @@ const NavBar = () => {
   }
 
   return (
-    <nav className="relative w-screen bg-white md:h-screen md:w-1/4">
+    <nav className="relative h-[87px] w-screen bg-white lg:h-screen lg:w-1/4">
       <div className="flex items-center justify-around py-5">
         <div
-          className="hamburger flex h-[1.5rem] w-[1.5rem] flex-col justify-between md:hidden"
+          className="hamburger flex h-[1.5rem] w-[1.5rem] flex-col justify-between lg:hidden"
           onClick={handleHamburger}
         >
           <div
@@ -62,7 +62,7 @@ const NavBar = () => {
             )}
           ></div>
         </div>
-        <h3 className="text-xl font-bold md:mt-[3rem] md:text-3xl">
+        <h3 className="text-xl font-bold lg:mt-[3rem] lg:text-3xl">
           白頭翁不吃小米
         </h3>
         {/* logo here */}
@@ -70,15 +70,18 @@ const NavBar = () => {
       </div>
       <ul
         className={clsx(
-          "flex w-full flex-col items-center gap-3 bg-white transition-all duration-300 md:max-h-fit md:opacity-100",
+          "flex w-full flex-col items-center gap-3 bg-white transition-all duration-300 lg:mt-20 lg:max-h-fit lg:opacity-100",
           {
             "max-h-0 opacity-0": !isHamburgerOpen,
-            "max-h-[200px] opacity-100": isHamburgerOpen
+            "max-h-[200px] pb-[50px] opacity-100": isHamburgerOpen
           }
         )}
       >
         {linkList.map((link) => (
-          <li key={link.name}>
+          <li
+            key={link.name}
+            className="text-lg font-bold hover:text-[#AA6666] hover:underline"
+          >
             <a href={link.href}>{link.name}</a>
           </li>
         ))}
