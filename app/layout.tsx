@@ -16,7 +16,7 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <body className={notoSans.className}>
         <div className="flex min-h-screen flex-col bg-[#dcccbc] 2xl:flex-row">
           <NavBar />

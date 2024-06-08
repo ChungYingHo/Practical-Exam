@@ -6,17 +6,15 @@ const IntroArea = ({
   description: string
 }) => {
   return (
-    <div className="mx-9 flex w-full items-start justify-center gap-7 px-5 2xl:mx-0 2xl:w-fit 2xl:gap-10">
+    <div className="mx-9 flex w-full items-start justify-between px-7 md:px-24 lg:px-60 xl:px-96 2xl:mx-0 2xl:w-fit 2xl:justify-center 2xl:gap-10 2xl:px-0">
       {/* left section */}
       <div className="relative">
-        <p className="border border-b-yellow-600 text-4xl font-bold [writing-mode:vertical-lr]">
-          {title}
-        </p>
+        <p className="text-4xl font-bold [writing-mode:vertical-lr]">{title}</p>
         {/* circle decoration */}
-        <div className="absolute bottom-[-0.75rem] right-[-0.75rem] h-6 w-6 rounded-full border-8 border-opacity-orange bg-transparent"></div>
+        <div className="absolute bottom-[-0.75rem] left-[25px] h-6 w-6 rounded-full border-8 border-opacity-orange bg-transparent"></div>
       </div>
       {/* right section */}
-      <div className="w-[80%] font-normal 2xl:w-[200px]">
+      <div className="w-[75%] font-normal 2xl:w-[200px]">
         <p>{description}</p>
       </div>
     </div>

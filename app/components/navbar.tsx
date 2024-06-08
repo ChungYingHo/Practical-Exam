@@ -33,10 +33,13 @@ const NavBar = () => {
   }
 
   return (
-    <nav className="relative z-10 min-h-[87px] w-screen bg-white shadow-[0_5px_5px_0px_rgba(0,0,0,0.25)] 2xl:h-screen 2xl:w-1/4">
+    <div
+      className="relative z-10 min-h-[87px] w-screen bg-white shadow-[0_5px_5px_0px_rgba(0,0,0,0.25)] 2xl:h-screen 2xl:w-1/4"
+      suppressHydrationWarning
+    >
       <div className="flex items-center justify-around py-5">
         <div
-          className="hamburger flex h-[1.5rem] w-[1.5rem] flex-col justify-between 2xl:hidden"
+          className="hamburger flex h-[1.5rem] w-[1.5rem] cursor-pointer flex-col justify-between 2xl:hidden"
           onClick={handleHamburger}
         >
           <div
@@ -90,7 +93,7 @@ const NavBar = () => {
           </li>
         ))}
       </ul>
-    </nav>
+    </div>
   )
 }
 
