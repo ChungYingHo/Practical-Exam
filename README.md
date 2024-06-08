@@ -1,36 +1,22 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## 針對下面幾題進行紀錄
+### 可使用任意的 HTML / CSS / JavaScript Framework
+這裡使用 NextJS 搭配 Tailwind CSS 進行。
 
-## Getting Started
-
-First, run the development server:
-
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+### Logo 僅限使用 CSS 撰寫
+撰寫 logo 部份的 CSS 放在一下資料夾結構：
+```xml
+---| App/
+------| components/
+---------| logo/
+------------| logo.tsx
+------------| logo.module.css
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 需有 RWD，breakpoint 可以自行設定
+這次把 breakpoint 主要設定在 1536px。
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### 選單的選項要能被選擇，需做出 selected 的效果
+我理解為這部分可能會切換路由，所以我讓選項的樣式跟著路由走，即去到相對應的路由選項才會呈現被選到的樣式。
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+### 備援連結
+防止 CodeSandbox 出現問題，這裡一併附上 [vercel 的連結](https://tech-test-dusky.vercel.app/)
