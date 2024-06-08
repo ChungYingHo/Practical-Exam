@@ -19,4 +19,4 @@
 我理解為這部分可能會切換路由，所以我讓選項的樣式跟著路由走，即去到相對應的路由選項才會呈現被選到的樣式。
 
 ### 備援連結
-防止 CodeSandbox 出現問題，這裡一併附上 [vercel 的連結](https://tech-test-dusky.vercel.app/)
+防止 CodeSandbox 出現問題，這裡一併附上 [vercel 的連結](https://practical-exam-phi.vercel.app/)
