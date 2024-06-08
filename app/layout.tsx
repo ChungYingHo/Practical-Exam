@@ -3,8 +3,11 @@ import { Noto_Sans } from "next/font/google"
 import "./globals.css"
 import NavBar from "./components/navbar"
 import clsx from "clsx"
+import dynamic from "next/dynamic"
 
 const notoSans = Noto_Sans({ subsets: ["latin"] })
+
+const NoSSR = dynamic(() => import("./components/navbar"), { ssr: false })
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -24,7 +27,7 @@ export default function RootLayout({
           "flex min-h-screen flex-col bg-[#dcccbc] 2xl:flex-row"
         )}
       >
-        <NavBar />
+        <NoSSR />
         {children}
       </body>
     </html>
