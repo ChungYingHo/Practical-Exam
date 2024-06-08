@@ -18,7 +18,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={notoSans.className}>
-        <div className="flex flex-col lg:flex-row">
+        <div className="flex min-h-screen flex-col bg-[#dcccbc] lg:flex-row">
           <NavBar />
           {children}
         </div>

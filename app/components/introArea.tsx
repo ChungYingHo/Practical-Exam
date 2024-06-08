@@ -11,7 +11,7 @@ const IntroArea = ({
       <div className="relative">
         <p className="text-4xl font-bold [writing-mode:vertical-lr]">{title}</p>
         {/* circle decoration */}
-        <div className="border-opacity-orange absolute bottom-[-0.75rem] right-[-0.75rem] h-6 w-6 rounded-full border-8 bg-transparent"></div>
+        <div className="absolute bottom-[-0.75rem] right-[-0.75rem] h-6 w-6 rounded-full border-8 border-opacity-orange bg-transparent"></div>
       </div>
       {/* right section */}
       <div className="w-[80%] font-normal lg:w-[200px]">

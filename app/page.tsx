@@ -32,7 +32,7 @@ export default function Home() {
       <section className="relative flex h-[311px] w-full flex-col items-center justify-end bg-[url(/background.png)] bg-cover bg-no-repeat lg:h-2/3 lg:items-end lg:pb-5 lg:pr-20">
         {/* black mask */}
         <div className="absolute inset-0 bg-[rgba(0,0,0,0.1)]"></div>
-        <div className="w-[87%]">
+        <div className="w-[87%] lg:flex lg:justify-end lg:gap-2">
           <h3 className="text-right text-5xl font-bold text-white lg:text-6xl">
             {titleList.chName}
           </h3>
@@ -46,7 +46,7 @@ export default function Home() {
         </p>
       </section>
       {/* section 2 */}
-      <section className="flex min-h-[calc(100vh-311px-87px)] w-full flex-col items-center gap-[50px] bg-[#dcccbc] py-[50px] lg:h-1/3 lg:min-h-0 lg:flex-row lg:items-start lg:justify-around lg:py-[60px]">
+      <section className="flex min-h-fit w-full flex-col items-center gap-[50px] bg-[#dcccbc] py-[50px] lg:h-1/3 lg:min-h-0 lg:flex-row lg:items-start lg:justify-around lg:py-[60px]">
         {introList.map((intro, index) => (
           <IntroArea
             key={index}
