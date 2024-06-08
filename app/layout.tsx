@@ -2,6 +2,7 @@ import type { Metadata } from "next"
 import { Noto_Sans } from "next/font/google"
 import "./globals.css"
 import NavBar from "./components/navbar"
+import clsx from "clsx"
 
 const notoSans = Noto_Sans({ subsets: ["latin"] })
 
@@ -17,11 +18,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={notoSans.className}>
-        <div className="flex min-h-screen flex-col bg-[#dcccbc] 2xl:flex-row">
-          <NavBar />
-          {children}
-        </div>
+      <body
+        className={clsx(
+          notoSans.className,
+          "flex min-h-screen flex-col bg-[#dcccbc] 2xl:flex-row"
+        )}
+      >
+        <NavBar />
+        {children}
       </body>
     </html>
   )
