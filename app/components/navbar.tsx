@@ -33,10 +33,10 @@ const NavBar = () => {
   }
 
   return (
-    <nav className="relative z-10 min-h-[87px] w-screen bg-white shadow-[0_5px_5px_0px_rgba(0,0,0,0.25)] lg:h-screen lg:w-1/4">
+    <nav className="relative z-10 min-h-[87px] w-screen bg-white shadow-[0_5px_5px_0px_rgba(0,0,0,0.25)] 2xl:h-screen 2xl:w-1/4">
       <div className="flex items-center justify-around py-5">
         <div
-          className="hamburger flex h-[1.5rem] w-[1.5rem] flex-col justify-between lg:hidden"
+          className="hamburger flex h-[1.5rem] w-[1.5rem] flex-col justify-between 2xl:hidden"
           onClick={handleHamburger}
         >
           <div
@@ -64,7 +64,7 @@ const NavBar = () => {
             )}
           ></div>
         </div>
-        <h3 className="text-xl font-bold lg:mt-[3rem] lg:text-3xl">
+        <h3 className="text-xl font-bold 2xl:mt-[3rem] 2xl:text-3xl">
           白頭翁不吃小米
         </h3>
         {/* logo here */}
@@ -72,7 +72,7 @@ const NavBar = () => {
       </div>
       <ul
         className={clsx(
-          "flex w-full flex-col items-center gap-3 bg-white transition-all duration-300 lg:mt-20 lg:max-h-fit lg:opacity-100",
+          "flex w-full flex-col items-center gap-3 bg-white transition-all duration-300 2xl:mt-20 2xl:max-h-fit 2xl:opacity-100",
           {
             "max-h-0 opacity-0": !isHamburgerOpen,
             "max-h-[200px] pb-[50px] opacity-100": isHamburgerOpen
